@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+catboost
+jupyterlab
+ipykernel
+nbformat
+nbclient
+streamlit
