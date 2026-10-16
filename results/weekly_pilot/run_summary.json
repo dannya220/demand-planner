@@ -1,0 +1,80 @@
+{
+  "dataset": "M5 sales_train_validation",
+  "store_id": "CA_1",
+  "category": "FOODS",
+  "n_items": 100,
+  "target": "weekly_sales",
+  "horizon_days": 7,
+  "forecast_protocol": "rolling weekly; previous completed weeks observed",
+  "selection_metric": "validation MAE",
+  "selected_model": "CatBoost — обучение MAE",
+  "selected_baseline": "Среднее за 4 недели",
+  "selected_iterations": 164,
+  "selection_train_end": "2016-01-31",
+  "final_train_end": "2016-03-27",
+  "final_train_rows": 21810,
+  "test_start": "2016-03-28",
+  "test_end": "2016-04-24",
+  "test_rows": 400,
+  "feature_columns": [
+    "store_id",
+    "item_id",
+    "lag_1w",
+    "lag_2w",
+    "lag_3w",
+    "lag_4w",
+    "mean_4w",
+    "mean_8w",
+    "std_4w",
+    "month",
+    "week_of_year"
+  ],
+  "model_params": {
+    "iterations": 164,
+    "learning_rate": 0.05,
+    "depth": 6,
+    "loss_function": "MAE",
+    "thread_count": 4,
+    "random_seed": 42,
+    "use_best_model": false,
+    "eval_metric": "MAE",
+    "allow_writing_files": false
+  },
+  "test_metrics": [
+    {
+      "Метод": "Предыдущая неделя",
+      "MAE": 4.9375,
+      "WAPE": 0.3527415609930345,
+      "Bias": -0.005179496338631898
+    },
+    {
+      "Метод": "Среднее за 4 недели",
+      "MAE": 4.280625,
+      "WAPE": 0.3058135381318092,
+      "Bias": 0.019691016252902305
+    },
+    {
+      "Метод": "Медиана за 4 недели",
+      "MAE": 4.29375,
+      "WAPE": 0.30675120557242364,
+      "Bias": -0.0002679049830326844
+    },
+    {
+      "Метод": "CatBoost — обучение MAE",
+      "MAE": 4.205841185592082,
+      "WAPE": 0.3004708830571232,
+      "Bias": -0.026092157442574967
+    }
+  ],
+  "relative_test_mae_gain_vs_selected_baseline": 0.017470302679612918,
+  "test_weekly_wins": 2,
+  "model_file": "models/catboost_weekly_pilot.cbm",
+  "limitations": [
+    "100 FOODS items in CA_1; not the complete M5 dataset",
+    "4 test weeks in one chronological holdout",
+    "earlier completed test weeks are observed for later weekly forecasts",
+    "EDA includes the full available history",
+    "observed sales are not uncensored demand; stock data unavailable",
+    "not a Kaggle WRMSSE result or a fixed-origin 28-day forecast"
+  ]
+}

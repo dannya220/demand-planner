@@ -1,0 +1,18 @@
+{
+  "store_id": "CA_1",
+  "items": 3049,
+  "daily_history_days": 1913,
+  "complete_weeks": 273,
+  "weekly_rows": 832377,
+  "training_rows_eligible": 623292,
+  "validation_rows_available": 24392,
+  "validation_rows_evaluated": 24390,
+  "selection_rule": "price registered by forecast origin; historical zeros retained",
+  "reference_period_already_viewed_in_pilot": true,
+  "weekly_memory_mb": 23.188876152038574,
+  "feature_memory_mb": 96.22014904022217,
+  "load_seconds": 3.3059301670000423,
+  "weekly_seconds": 0.307020417007152,
+  "feature_seconds": 3.3909271669981536,
+  "catboost_trained": false
+}

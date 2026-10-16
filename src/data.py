@@ -1,4 +1,4 @@
-"""Download M5 and prepare a small, reproducible product-store panel."""
+"""Load M5 and build daily or weekly product-store tables."""
 
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -64,8 +64,8 @@ def download_m5(raw_dir: Path) -> pd.DataFrame:
     return pd.DataFrame(metadata)
 
 
-def load_subset(raw_dir: Path, store_id: str = "CA_1", category: str = "FOODS", n_items: int = 100, seed: int = 42):
-    """Read CSVs in chunks and select IDs without ranking future sales."""
+def load_subset(raw_dir: Path, store_id: str = "CA_1", category: str | None = "FOODS", n_items: int | None = 100, seed: int = 42):
+    """Read one store in chunks. None selects all categories or all matching items."""
     calendar = pd.read_csv(raw_dir / "calendar.csv", parse_dates=["date"])
     sales_path = raw_dir / "sales_train_validation.csv"
     columns = pd.read_csv(sales_path, nrows=0).columns
@@ -84,11 +84,16 @@ def load_subset(raw_dir: Path, store_id: str = "CA_1", category: str = "FOODS", 
     if not store_parts:
         raise ValueError(f"Store not found: {store_id}")
     store_sales = pd.concat(store_parts, ignore_index=True)
-    candidates = store_sales.loc[store_sales["cat_id"].eq(category)]
+    candidates = store_sales if category is None else store_sales.loc[store_sales["cat_id"].eq(category)]
     item_ids = np.array(sorted(candidates["item_id"].unique()), dtype=object)
-    if len(item_ids) < n_items or n_items < 1:
-        raise ValueError("The requested subset size is unavailable.")
-    selected_ids = sorted(np.random.default_rng(seed).choice(item_ids, size=n_items, replace=False).tolist())
+    if n_items is None:
+        if len(item_ids) == 0:
+            raise ValueError("No products match the requested selection.")
+        selected_ids = item_ids.tolist()
+    else:
+        if len(item_ids) < n_items or n_items < 1:
+            raise ValueError("The requested subset size is unavailable.")
+        selected_ids = sorted(np.random.default_rng(seed).choice(item_ids, size=n_items, replace=False).tolist())
     sales = candidates.loc[candidates["item_id"].isin(selected_ids)].copy().reset_index(drop=True)
 
     price_parts = []
@@ -132,3 +137,63 @@ def build_panel(calendar: pd.DataFrame, sales: pd.DataFrame, prices: pd.DataFram
     panel["price_available"] = panel["sell_price"].notna()
     panel["day_index"] = panel["d"].str.removeprefix("d_").astype("int32")
     return panel.sort_values(["item_id", "date"]).reset_index(drop=True)
+
+
+def build_weekly_table(calendar: pd.DataFrame, sales: pd.DataFrame, prices: pd.DataFrame) -> pd.DataFrame:
+    """Sum complete Monday–Sunday weeks directly from the wide sales table."""
+    series_keys = ["store_id", "item_id"]
+    if sales.empty or sales.duplicated(series_keys).any():
+        raise ValueError("Sales must contain one nonempty row per store and item.")
+    if calendar["d"].duplicated().any() or calendar["date"].duplicated().any():
+        raise ValueError("Calendar days must be unique.")
+    price_keys = ["store_id", "item_id", "wm_yr_wk"]
+    if prices.duplicated(price_keys).any():
+        raise ValueError("Prices must be unique per store, item and M5 week.")
+    if prices["sell_price"].dropna().le(0).any():
+        raise ValueError("Known selling prices must be positive.")
+
+    day_columns = sorted(
+        (column for column in sales.columns if column.startswith("d_")),
+        key=lambda column: int(column[2:]),
+    )
+    if not day_columns:
+        raise ValueError("No daily sales columns found.")
+    observed_calendar = calendar.set_index("d").reindex(day_columns)
+    if observed_calendar["date"].isna().any():
+        raise ValueError("Some sales days are missing from the calendar.")
+    dates = pd.to_datetime(observed_calendar["date"])
+    if not dates.is_monotonic_increasing:
+        raise ValueError("Sales day numbers must follow calendar order.")
+
+    day_weeks = dates + pd.to_timedelta(6 - dates.dt.dayofweek, unit="D")
+    week_sizes = day_weeks.value_counts().sort_index()
+    complete_weeks = week_sizes.index[week_sizes.eq(7)]
+    if len(complete_weeks) == 0:
+        raise ValueError("No complete calendar weeks available.")
+    complete_columns = observed_calendar.index[day_weeks.isin(complete_weeks)].tolist()
+    values = sales[complete_columns].to_numpy(copy=False)
+    if not np.issubdtype(values.dtype, np.integer) or (values < 0).any():
+        raise ValueError("Sales must be nonnegative integer counts.")
+    weekly_values = values.reshape(len(sales), len(complete_weeks), 7).sum(axis=2)
+    if weekly_values.max() <= np.iinfo(np.int32).max:
+        weekly_values = weekly_values.astype("int32")
+
+    observed_price_week_starts = observed_calendar.groupby("wm_yr_wk")["date"].min()
+    known_prices = prices.loc[prices["sell_price"].notna(), price_keys].copy()
+    known_prices["first_price_date"] = known_prices["wm_yr_wk"].map(observed_price_week_starts)
+    first_prices = (
+        known_prices.groupby(series_keys, observed=True)["first_price_date"]
+        .min().reset_index()
+    )
+    series = sales[list(IDENTIFIERS)].merge(
+        first_prices, on=series_keys, how="left", sort=False, validate="one_to_one"
+    )
+    weekly = pd.DataFrame({
+        column: pd.Categorical(np.repeat(series[column].to_numpy(dtype=object), len(complete_weeks)))
+        for column in IDENTIFIERS
+    })
+    weekly["week_end"] = np.tile(complete_weeks.to_numpy(), len(series))
+    weekly["weekly_sales"] = weekly_values.reshape(-1)
+    weekly["days_in_week"] = np.int8(7)
+    weekly["first_price_date"] = np.repeat(series["first_price_date"].to_numpy(), len(complete_weeks))
+    return weekly.sort_values([*series_keys, "week_end"]).reset_index(drop=True)
