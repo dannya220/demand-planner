@@ -1,0 +1,11 @@
+{
+  "evaluation": "local_public_period",
+  "train_end": "2016-04-24",
+  "score_start": "2016-04-25",
+  "score_end": "2016-05-22",
+  "horizon": 28,
+  "bottom_series": 30490,
+  "aggregated_series": 42840,
+  "best_baseline": "Среднее по дням недели за 4 недели",
+  "best_WRMSSE": 0.7524207374036926
+}

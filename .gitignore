@@ -32,3 +32,6 @@ models/*
 # OS files and logs
 .DS_Store
 *.log
+
+# Full M5 forecast exports stay local; keep metrics and configs in Git
+results/m5_wrmsse/**/*.csv.gz
