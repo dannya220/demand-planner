@@ -4,6 +4,7 @@ matplotlib
 scikit-learn
 scipy
 catboost
+optuna
 jupyterlab
 ipykernel
 nbformat

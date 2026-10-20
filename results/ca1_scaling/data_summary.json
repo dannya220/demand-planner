@@ -11,8 +11,8 @@
   "reference_period_already_viewed_in_pilot": true,
   "weekly_memory_mb": 23.188876152038574,
   "feature_memory_mb": 96.22014904022217,
-  "load_seconds": 3.3059301670000423,
-  "weekly_seconds": 0.307020417007152,
-  "feature_seconds": 3.3909271669981536,
+  "load_seconds": 3.3028198340325616,
+  "weekly_seconds": 0.2967827909742482,
+  "feature_seconds": 3.271611459029373,
   "catboost_trained": false
 }

@@ -1,0 +1,52 @@
+{
+  "params": {
+    "iterations": 1952,
+    "learning_rate": 0.030447981257860905,
+    "depth": 8,
+    "loss_function": "MAE",
+    "thread_count": 4,
+    "random_seed": 42,
+    "eval_metric": "MAE",
+    "allow_writing_files": false,
+    "l2_leaf_reg": 6.287286867969111
+  },
+  "features": [
+    "store_id",
+    "item_id",
+    "lag_1w",
+    "lag_2w",
+    "lag_3w",
+    "lag_4w",
+    "mean_4w",
+    "mean_8w",
+    "std_4w",
+    "month",
+    "week_of_year",
+    "cat_id",
+    "dept_id",
+    "mean_2w",
+    "mean_13w",
+    "trend_2w_8w",
+    "std_8w",
+    "zero_share_8w",
+    "zero_run",
+    "mean_nonzero_8w",
+    "snap_days",
+    "event_days",
+    "week_events",
+    "price_last",
+    "price_change_1w",
+    "price_relative_4w",
+    "price_missing_last_period"
+  ],
+  "categorical_features": [
+    "store_id",
+    "item_id",
+    "cat_id",
+    "dept_id",
+    "week_events"
+  ],
+  "test_start": "2016-04-25",
+  "test_end": "2016-05-22",
+  "forecast_protocol": "rolling_one_week_fixed_model"
+}
