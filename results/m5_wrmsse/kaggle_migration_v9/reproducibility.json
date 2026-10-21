@@ -1,0 +1,51 @@
+{
+  "source": "User-provided Kaggle cell outputs; metrics retain displayed precision; no fresh training run",
+  "training_rows": 3170960,
+  "training_origins": 52,
+  "horizons_per_origin": 2,
+  "features": 63,
+  "versions_kaggle": {
+    "catboost": "1.2.10",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3"
+  },
+  "versions_local": {
+    "catboost": "1.2.10",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "catboost_params_and_git_revision_match": true,
+  "raw_sha256_match": {
+    "calendar.csv": true,
+    "sales_train_validation.csv": true,
+    "sell_prices.csv": true
+  },
+  "mean_WRMSSE_kaggle_before_fix": 0.64957,
+  "feature_checks": [
+    {
+      "origin": "2015-01-11",
+      "target": "2015-01-12",
+      "rows": 30490,
+      "differing_columns_before_fix": [
+        "price_relative_std_13w"
+      ],
+      "all_columns_match_after_fix": true
+    },
+    {
+      "origin": "2016-01-31",
+      "target": "2016-02-01",
+      "rows": 30490,
+      "differing_columns_before_fix": [
+        "price_relative_std_13w"
+      ],
+      "all_columns_match_after_fix": true
+    }
+  ],
+  "bottleneck_active_before_fix": true,
+  "fix": "pd.set_option(\"compute.use_bottleneck\", False); price_features_at_origin.cache_clear()",
+  "post_fix_model_retrained": false,
+  "limitation": "Feature equality verified on two slices only. Effect on trained model WRMSSE not measured. User deferred CatBoost retraining.",
+  "next": "First LightGBM experiment with fixed feature calculation; density; ensemble; final private evaluation."
+}

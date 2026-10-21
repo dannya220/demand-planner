@@ -1,0 +1,5 @@
+period,origin,WRMSSE_local,WRMSSE_kaggle_before_fix,Bias_local,Bias_kaggle_before_fix
+historical,2016-01-31,0.72067,0.7255,-0.0319,-0.0391
+historical,2016-02-28,0.65168,0.65715,-0.0027,-0.0056
+historical,2016-03-27,0.56683,0.56605,-0.0166,-0.0177
+public,2016-04-24,0.63673,0.63994,-0.042,-0.0431
