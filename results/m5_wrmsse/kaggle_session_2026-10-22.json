@@ -1,0 +1,287 @@
+{
+  "date": "2026-10-22",
+  "source": "downloaded Kaggle notebook and unpacked user checkpoint; no training rerun",
+  "notebook": "notebooks/04_kaggle_training.ipynb",
+  "source_notebook_filename": "notebook4f8a716da7.ipynb",
+  "formatting": {
+    "original_cells": 38,
+    "formatted_cells": 52,
+    "code_cells": 25,
+    "code_ast_preserved": true,
+    "outputs_preserved": true,
+    "execution_counts_preserved": true,
+    "formatter": "black 26.10.1",
+    "reformatted_code_cells": 25,
+    "html_preview_exported": true,
+    "original_sha256": "9f960ccb84b0f6a96fa1be43052ae24b27f8750edb33a2c9bb62890cf1f9c563",
+    "formatted_sha256": "92dca7578f35e8dc39ec126f9fbb4f9ba0d46c6352472f076fed2007890f0479",
+    "checkpoint_file_count": 50,
+    "conflicting_checkpoint_paths": [],
+    "training_executed": false
+  },
+  "independent_wrmsse_diagnostic": {
+    "status": "recorded as matched in the working conversation",
+    "method": "independent Python calculation of the published M5 formula",
+    "saved_numeric_output_available": false,
+    "diagnostic_cell_retained_in_export": false,
+    "official_r_evaluator_run": false,
+    "official_kaggle_submission_score_received": false
+  },
+  "next": [
+    "LightGBM 52x8, same 63 features and 386 trees; measure RAM and elapsed time",
+    "Confirm density on other historical origins; keep CatBoost 52x2 for now",
+    "Feature experiments and LightGBM tuning; ensemble and calibration on historical predictions"
+  ],
+  "checkpoint_files": [
+    {
+      "path": "models/cv_2016-01-31_catboost_optuna_v9_kaggle.cbm",
+      "sha256": "a09805ad2edae5069414c551e13755d6fef76b373089f800edc09bcafc432c5a",
+      "bytes": 53356244
+    },
+    {
+      "path": "models/cv_2016-02-28_catboost_optuna_v9_kaggle.cbm",
+      "sha256": "5fed907c586ff3c3c5562195ea56de40a77051590dd8cbcdf0d0fa194d09cdff",
+      "bytes": 48782956
+    },
+    {
+      "path": "models/cv_2016-03-27_catboost_optuna_v9_kaggle.cbm",
+      "sha256": "1bb4a1da51f38857a9fa96fccc77dc0b4b388b798164f67a469c78923496e370",
+      "bytes": 46000588
+    },
+    {
+      "path": "models/density_52x4_v1/2016-03-27/catboost.cbm",
+      "sha256": "1564cd8480ba86b021ee2c692b8d758250e13186160fb504d158d9d1056f87ce",
+      "bytes": 66124268
+    },
+    {
+      "path": "models/density_52x4_v1/2016-03-27/lightgbm.txt",
+      "sha256": "6cebc5d16d3cfd2697fbc7dfc9a966e3591e85667c1d61bc409a690bdc5271c8",
+      "bytes": 7284983
+    },
+    {
+      "path": "models/lightgbm_v1_bn_off/historical_2016-03-27.txt",
+      "sha256": "6acee23efccddfbb88c7121ae21e436d86114294a64dc254f3594fb307d7ae0c",
+      "bytes": 780431
+    },
+    {
+      "path": "models/lightgbm_v2_wrmsse/historical_2016-03-27.txt",
+      "sha256": "a3bfa4a52d47494fae0fa420bb73355993602a06caefd0532efe1d981d4530d1",
+      "bytes": 7484626
+    },
+    {
+      "path": "models/lightgbm_v2_wrmsse/public.txt",
+      "sha256": "93bde5f0544190dfa6d259de9a9da1bab488bbef353b1695023236d9971e56da",
+      "bytes": 7493032
+    },
+    {
+      "path": "models/public_catboost_optuna_v9_kaggle.cbm",
+      "sha256": "26a9a106ac22029665045cec57a50bc8e50f37d5e7aab622d877776eb819247d",
+      "bytes": 47629760
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-01-31_catboost_optuna_v9_kaggle/comparison.csv",
+      "sha256": "79b94272b2848d57d13fe5c6bacb8a3bd28fc7a1b5823a0cbfce9e1b1d6a281d",
+      "bytes": 200
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-01-31_catboost_optuna_v9_kaggle/config.json",
+      "sha256": "7ffcdfefa2b0a02d857f24c931fe4ce0ddcaaa6a78002b342ae79037946b52f9",
+      "bytes": 2447
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-01-31_catboost_optuna_v9_kaggle/metrics_by_level.csv",
+      "sha256": "b6fe766334f2c31eb485c9d50ed9f80b37c9d9c464afb9da3b2c13cb82305273",
+      "bytes": 647
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-01-31_catboost_optuna_v9_kaggle/predictions.csv.gz",
+      "sha256": "f3d96f081d9ebb3b512947ff4724814d3d341cbff409c0a77f91757a82da9254",
+      "bytes": 7685150
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-02-28_catboost_optuna_v9_kaggle/comparison.csv",
+      "sha256": "187a434f6388995ab64b7546e2c0645e55d8febe8aacffcbbbf8d545e80e04ed",
+      "bytes": 201
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-02-28_catboost_optuna_v9_kaggle/config.json",
+      "sha256": "e4c98c05f8f4578a7eb974a04dad15bee7ee8a2039edaedaa3c545ad7abfb3f4",
+      "bytes": 2450
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-02-28_catboost_optuna_v9_kaggle/metrics_by_level.csv",
+      "sha256": "ca8a2194763988b4bf435f9b26f99204c7e4a909ec99f8b4cff053e3d647cece",
+      "bytes": 644
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-02-28_catboost_optuna_v9_kaggle/predictions.csv.gz",
+      "sha256": "52129527c58306dcd35c418e68f79e480d0d6997b690a4a2894d31fbd6b3d194",
+      "bytes": 7675902
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-03-27_catboost_optuna_v9_kaggle/comparison.csv",
+      "sha256": "64add190657c7f0231af0c39f441117087d7d081d71be96a378bcbe585318910",
+      "bytes": 200
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-03-27_catboost_optuna_v9_kaggle/config.json",
+      "sha256": "96598e015b7213a24036db1b2ad59d03f8078fe1613456f14d807da2806f75f8",
+      "bytes": 2450
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-03-27_catboost_optuna_v9_kaggle/metrics_by_level.csv",
+      "sha256": "c069289837cebc0b64bd747bbeac1494ad3a5bfa03f9fb467b28f8c701d712e7",
+      "bytes": 646
+    },
+    {
+      "path": "results/m5_wrmsse/cv_2016-03-27_catboost_optuna_v9_kaggle/predictions.csv.gz",
+      "sha256": "645df42b26d68156a5890c2091e92ba1167f2baafaeb5c2bd5f3ddcdfdab7e61",
+      "bytes": 7673708
+    },
+    {
+      "path": "results/m5_wrmsse/cv_metrics.csv",
+      "sha256": "6bbea00a86850ee913ca70f7f5a96d83fad00fce7ef0cba93e47aae77e2408ba",
+      "bytes": 269
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/CatBoost/metrics.json",
+      "sha256": "b20844673c813f78cf1180fd00d1e06d8804739eeedf06e3d3af57e50e3b6ecb",
+      "bytes": 99
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/CatBoost/metrics_by_level.csv",
+      "sha256": "78f2598502662c61e68cc52caaceaa99dcf69bb0e9bbc9fe581e691b836dbe77",
+      "bytes": 649
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/CatBoost/predictions.csv.gz",
+      "sha256": "683abdcfb051d3c30cde8b0082bcb77254aa0cfd9145e7dfd75f2fb434dc1542",
+      "bytes": 7675591
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/LightGBM/metrics.json",
+      "sha256": "9fe36a8a1071d35bb92e4b8fa923cda0a6bfb853a8587aada71650fd9e88cdfd",
+      "bytes": 96
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/LightGBM/metrics_by_level.csv",
+      "sha256": "e5ecdb58e200dfab619d7ebb4143d7275ee5f6939fad633524e660de7533a77b",
+      "bytes": 649
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/LightGBM/predictions.csv.gz",
+      "sha256": "0985329172558017d5337b6dd11f85f939acc05ee66d6008df4d4d34d6237f35",
+      "bytes": 7692645
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/comparison.csv",
+      "sha256": "57d6c133c504ec49b7d886525507297df404c6f09a23f6bbe49a0034d2c938d9",
+      "bytes": 315
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/protocol.json",
+      "sha256": "506fa8fdf4a89113bcfd0a3005e9bfdac8925a1f3fca859367e902427f13c855",
+      "bytes": 3336
+    },
+    {
+      "path": "results/m5_wrmsse/density_52x4_v1/2016-03-27/training_plan.csv",
+      "sha256": "637e296e1750174e09ffa9db1a53dc47d8cb42ac8709167476a19b60d18c1037",
+      "bytes": 6320
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v1_bn_off/historical_2016-03-27/config.json",
+      "sha256": "a709b237a4b7d67a8a9e548a255e113ddd53767372fb3d82410eacd40a50f5ab",
+      "bytes": 72321
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v1_bn_off/historical_2016-03-27/metrics.csv",
+      "sha256": "6995cdd75dfba3f14ef1dfa10c2086d737935a484d9a45c9fbea2723f969bc57",
+      "bytes": 52
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v1_bn_off/historical_2016-03-27/metrics_by_level.csv",
+      "sha256": "7036010b9e11b2f1738bea5fb6e7f897ac1205b4bcc47557770c6a22182a337c",
+      "bytes": 640
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v1_bn_off/historical_2016-03-27/predictions.csv.gz",
+      "sha256": "7874ad7e6f16da6ba632ca1c8dcf028b0986bbada45b2f9c90342307ffb24352",
+      "bytes": 6214100
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/historical_2016-03-27/config.json",
+      "sha256": "a40eaabd642d36b41b8cbfdd9b92ecc61cb97586487144d6a08b03e59d67fa53",
+      "bytes": 72467
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/historical_2016-03-27/metrics.csv",
+      "sha256": "7b3a2f934022cf215ae4361c8706d23cf150783b96e175e6de0d47fd69a5b7b6",
+      "bytes": 53
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/historical_2016-03-27/metrics_by_level.csv",
+      "sha256": "ed04f5e61d4b14cd9b5abc847e31f03dcec797ecf8e42a6d4926297ef42e1f00",
+      "bytes": 649
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/historical_2016-03-27/predictions.csv.gz",
+      "sha256": "5c9a9ea78d721210cf460bfbfb56f2bf6103aa470ba48d090bce5dde969e8f80",
+      "bytes": 7698791
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/historical_comparison.csv",
+      "sha256": "0be7f92cec9305ad4a2cf19a681bb3662b097902a4c393631cb30d2e395fa69a",
+      "bytes": 218
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/public/config.json",
+      "sha256": "d653f70ae7c451cc13b16634f5abed6526806a59f99d9288661b8f89cbd3e48b",
+      "bytes": 72319
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/public/metrics.csv",
+      "sha256": "fca2ae1f8a839b953efb08f37d15b6d80c5e86466b059ec0f3ed2b80aba5b93a",
+      "bytes": 52
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/public/metrics_by_level.csv",
+      "sha256": "7a0e7dc1436fc85003239f4857f96c6a3bcff766819cb83550279eca3e774f89",
+      "bytes": 641
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/public/predictions.csv.gz",
+      "sha256": "84f9930fc69fd0b284f064ed2d70c345735f218ecac06b8fa755fbb7da2634da",
+      "bytes": 7687381
+    },
+    {
+      "path": "results/m5_wrmsse/lightgbm_v2_wrmsse/public_comparison.csv",
+      "sha256": "558c07bea43ed1c8268a93abcc1499e010fd028c4da3b2686a3e71328126add3",
+      "bytes": 145
+    },
+    {
+      "path": "results/m5_wrmsse/migration_check.json",
+      "sha256": "ec446975e1c33cc1b7f0a638811a9cd654030f585bcb008b5726f49cfe404517",
+      "bytes": 442
+    },
+    {
+      "path": "results/m5_wrmsse/public_catboost_optuna_v9_kaggle/comparison.csv",
+      "sha256": "0b583febf64b6cefc2ca3923f0d6035f5df595ea2fa57b5c0258f75a7f331d90",
+      "bytes": 199
+    },
+    {
+      "path": "results/m5_wrmsse/public_catboost_optuna_v9_kaggle/config.json",
+      "sha256": "cc8efe8a63fe94ab0489c8cbbccebaa883a8cec418c732b3134c46043a6686ff",
+      "bytes": 2439
+    },
+    {
+      "path": "results/m5_wrmsse/public_catboost_optuna_v9_kaggle/metrics_by_level.csv",
+      "sha256": "c18b32d2a3b9219986e76b7e07c2b8b8c6cfd8f351a8c46b0292fce363e29c5f",
+      "bytes": 645
+    },
+    {
+      "path": "results/m5_wrmsse/public_catboost_optuna_v9_kaggle/predictions.csv.gz",
+      "sha256": "cf8864d1b4f5df10a8e918cf436856b4730872f60dd1932c454aa7b2549533dd",
+      "bytes": 7666340
+    }
+  ]
+}

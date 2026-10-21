@@ -4,6 +4,7 @@ matplotlib
 scikit-learn
 scipy
 catboost
+lightgbm==4.6.0
 optuna
 jupyterlab
 ipykernel
