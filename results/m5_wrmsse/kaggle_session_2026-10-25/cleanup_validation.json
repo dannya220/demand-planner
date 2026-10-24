@@ -1,0 +1,19 @@
+{
+  "nbformat_valid": true,
+  "code_cells_compile": 17,
+  "preserved_core_cells_AST_and_outputs": 11,
+  "new_code_outputs_empty": true,
+  "unresolved_global_names": [],
+  "training_default": false,
+  "accepted_feature_count": 67,
+  "saved_CPU_parameters_preserved": true,
+  "training_plan_52x8_exact_match": true,
+  "training_plan_52x16_exact_match": true,
+  "nested_plan_integrity_2_4_8_16_28": true,
+  "checkpoint_files_preserved_by_hash": 30,
+  "documentation_links_valid": true,
+  "credential_pattern_scan_clean": true,
+  "html_export_created": true,
+  "notebook_training_or_inference_executed": false,
+  "validation_scope": "Only syntax, schema, plan metadata, artifact hashes and presentation were checked; no ML run or inference."
+}

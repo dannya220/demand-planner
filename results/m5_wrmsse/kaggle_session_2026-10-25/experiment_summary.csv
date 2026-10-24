@@ -1,0 +1,6 @@
+experiment,origin,horizons_per_origin,features,trees,WRMSSE,Bias,fit_seconds,precision,source,decision
+density_52x8_v1,2016-03-27,8,63,386,0.5382825351867488,-0.009263838953164516,722.6487645020001,full_saved_protocol,checkpoint_price_ewm,historical_control
+density_52x16_v1,2016-03-27,16,63,386,0.5336225401583694,-0.013810401458032584,1391.350269165,full_saved_protocol,checkpoint_price_ewm,historical_control
+target_week_price_52x16_v1,2016-03-27,16,67,386,0.5307854625650568,-0.012070512988163973,1439.0940529580002,full_saved_protocol,checkpoint_price_ewm,accepted
+target_week_price_ewm_52x16_v1,2016-03-27,16,68,386,0.5308069123360211,-0.012581236494267567,1474.261509731,full_saved_protocol,checkpoint_price_ewm,rejected
+short_lags_52x16_v1,2016-03-27,16,70,386,0.5323,-0.0134,,WRMSSE_5_decimals_Bias_2_percent_decimals,downloaded_notebook_saved_output,rejected

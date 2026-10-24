@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "downloaded_notebook": "04-kaggle-training.ipynb",
+  "downloaded_notebook_sha256": "02834d31d66694455052c12b0a58322eaaa4c4295c3177f6f82ff40a8ad95068",
+  "checkpoint_directory": "demand-planner_checkpoint_price_ewm",
+  "accepted_experiment": "target_week_price_52x16_v1",
+  "accepted_features": 67,
+  "accepted_metrics": {
+    "WRMSSE": 0.5307854625650568,
+    "Bias": -0.012070512988163973
+  },
+  "forecast_origin": "2016-03-27",
+  "forecast_window": [
+    "2016-03-28",
+    "2016-04-24"
+  ],
+  "training_performed_during_cleanup": false,
+  "verification_scope": [
+    "notebook_schema",
+    "code_syntax",
+    "unchanged_core_AST",
+    "unchanged_saved_outputs",
+    "exact_training_plan_against_checkpoint",
+    "artifact_hashes",
+    "documentation_links"
+  ],
+  "historical_only": true,
+  "official_kaggle_score_available": false,
+  "short_lags_artifact_scope": "rounded notebook output only; model and full-precision protocol not provided"
+}
