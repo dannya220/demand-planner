@@ -1,0 +1,16 @@
+{
+  "source_checkpoint_files_preserved_by_hash": 133,
+  "trials_COMPLETE": 29,
+  "CSV_protocol_and_curve_values_consistent": true,
+  "sqlite_quick_check": "ok",
+  "unchanged_code_cells_AST": 25,
+  "all_code_outputs_empty": true,
+  "configuration_sync": {
+    "trials": 40,
+    "early_stopping": 200,
+    "timeout": "10 hours from agreed budget"
+  },
+  "source_export_sha256": "e8fe5e75afcbdf8a138ac3f9344768494323b54080b70c8a2c1a2afd764bceff",
+  "checkpoint_contract_sha256": "3d69c6050671e9d93ccf59941384fdd4c4cd8f21b038bcf0187a97e3682c3cd0",
+  "ML_training_or_model_inference_performed": false
+}
