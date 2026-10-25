@@ -1,0 +1,2 @@
+name,phase,origin,density,variant,WRMSSE,Bias,trees,minutes,cap_reached,WRMSSE_52x8,trees_52x8,gain_vs_52x8
+density28_2016-03-27_52x28_trial_009,density28,2016-03-27,28,trial_009,0.5019588456962026,-0.002901704680924322,197,37.5747398689,False,0.5061039037388387,321,0.008190132524200089

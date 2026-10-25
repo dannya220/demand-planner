@@ -1,0 +1,35 @@
+{
+  "method": "pairwise_convex_blend",
+  "origin": "2016-03-27",
+  "forecast_start": "2016-03-28",
+  "forecast_end": "2016-04-24",
+  "historical_development_score": true,
+  "weight_step": 0.05,
+  "weights": {
+    "LightGBM_28_trial9": 0.7,
+    "LightGBM_8_trial5": 0.30000000000000004
+  },
+  "WRMSSE": 0.500879332781371,
+  "Bias": -0.005162882802935975,
+  "gain_vs_28": 0.002150600440827821,
+  "sources": {
+    "LightGBM_28_trial9": {
+      "source": "/kaggle/working/demand-planner/results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/predictions.csv.gz",
+      "sha256": "0e88507998868cc531ea32ab0637605947760150b2562fb5ce5d6f3add0cac77",
+      "WRMSSE": 0.5019588456962026,
+      "Bias": -0.002901704680924322
+    },
+    "LightGBM_8_trial9": {
+      "source": "/kaggle/working/demand-planner/results/m5_wrmsse/optuna_lgbm_67_cpu_52x8_v1/trial_009/predictions.csv.gz",
+      "sha256": "3ded2c6a1829948fd1b97eff45e041b73a32c39852ead4d892d135a09d4ef9a8",
+      "WRMSSE": 0.506103903738839,
+      "Bias": -0.002460696001496121
+    },
+    "LightGBM_8_trial5": {
+      "source": "/kaggle/working/demand-planner/results/m5_wrmsse/optuna_lgbm_67_cpu_52x8_v1/trial_005/predictions.csv.gz",
+      "sha256": "3aa497eef07acf5c2e4d9d127dd479ead598219ce03c92c427e1c3721d11b0e5",
+      "WRMSSE": 0.5066471330479767,
+      "Bias": -0.010438965087630092
+    }
+  }
+}

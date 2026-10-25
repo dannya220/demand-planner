@@ -1,0 +1,232 @@
+{
+  "source_directory": "demand-planner_ensemble_three_checkpoint",
+  "files": [
+    {
+      "source": "models/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009.txt",
+      "installed": "models/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009.txt",
+      "sha256": "714652340d5799ef6632f78e7000bb3a39e05f584f0f505a6985fdd095f8da82",
+      "bytes": 3337830,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/feature_importance_gain.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/feature_importance_gain.csv",
+      "sha256": "077ca610bc65568b43351557f95375e4739ede8a04293be079b0d1ed942ad73f",
+      "bytes": 2388,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/learning_curve.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/learning_curve.csv",
+      "sha256": "8e1152e9969c5882046d52c79b8406cda2ef70ebd46ccb40566f9c6f892d2823",
+      "bytes": 8995,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics.csv",
+      "sha256": "5380f00cd3aab7389b28008205a99312fee2b3c7cd826e32a191808d3892869d",
+      "bytes": 53,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics_by_level.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics_by_level.csv",
+      "sha256": "b9b351d6930f9c25e56397a797bbc474ec7ccc5faae0133c0a4fb4635af8b92b",
+      "bytes": 648,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/predictions.csv.gz",
+      "sha256": "0e88507998868cc531ea32ab0637605947760150b2562fb5ce5d6f3add0cac77",
+      "bytes": 7681978,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/protocol.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/protocol.json",
+      "sha256": "b68dd5844474c46abc92bbfc05007a4ed764090fcc17d812f19fa89139c56d3b",
+      "bytes": 3080,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/training_plan.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/training_plan.csv",
+      "sha256": "41d5ba1e770f71f2039d0955784b8b9c28a44462dae8944bfb67b1ea4704249f",
+      "bytes": 61487,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_summary.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/density28_summary.csv",
+      "sha256": "f5f35ba5b03000566d9253808898395dc0f290c03230b6ed07997194afad9f49",
+      "bytes": 288,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/individual_metrics.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/individual_metrics.csv",
+      "sha256": "194f36dd7656531e045eb64205cabbdbc5770ad87f06cb03d6fb42a3cd3402b0",
+      "bytes": 195,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/metrics_by_level.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/metrics_by_level.csv",
+      "sha256": "367da340f3a479621b315b0e41e6b1802a49f8423c2a442661b7043affa17ef9",
+      "bytes": 652,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/predictions.csv.gz",
+      "sha256": "4fb26e73f4535336c10a109418eaf07f9f47c11755ce14027c66d036656e976e",
+      "bytes": 7680721,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/protocol.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/protocol.json",
+      "sha256": "12f64fa27adebc03d56143b31fd0d0d3f97a204bed300704f6c3e4fceda29e0e",
+      "bytes": 1379,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_28_trial9/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_28_trial9/predictions.csv.gz",
+      "sha256": "0e88507998868cc531ea32ab0637605947760150b2562fb5ce5d6f3add0cac77",
+      "bytes": 7681978,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial5/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial5/predictions.csv.gz",
+      "sha256": "3aa497eef07acf5c2e4d9d127dd479ead598219ce03c92c427e1c3721d11b0e5",
+      "bytes": 8147545,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial9/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial9/predictions.csv.gz",
+      "sha256": "3ded2c6a1829948fd1b97eff45e041b73a32c39852ead4d892d135a09d4ef9a8",
+      "bytes": 8139592,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/weight_search.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/weight_search.csv",
+      "sha256": "2ad7588443553ce78f24dfa8648f734cbbe34a4406c12890fd016e8b1c4ad3c6",
+      "bytes": 4000,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/individual_metrics.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/individual_metrics.csv",
+      "sha256": "5c67dbbd2d98f85f1d35aa12b787abe7dd84beb39087df2cc2463d86ccfb60de",
+      "bytes": 249,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/metrics_by_level.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/metrics_by_level.csv",
+      "sha256": "9ebd383ce9fc4c439713e683fbd449c4eb49e35f802e3286fad6d6704bfcd7f5",
+      "bytes": 643,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/predictions.csv.gz",
+      "sha256": "5f39eeea7e74f756aa62afe8555d753bf2b2558fee070a12939fe27dbbe9f00e",
+      "bytes": 7681625,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/protocol.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/protocol.json",
+      "sha256": "90036395df8050a2d58bf74966b6c25febcc3b342f3d2abc6860162f5eba27b7",
+      "bytes": 950,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/CatBoost_52x2/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/CatBoost_52x2/predictions.csv.gz",
+      "sha256": "b71a0e15ed474b24e1527743cc25709f608a0ccd77135b0a59ae4740f7d4597b",
+      "bytes": 7525647,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_28_trial9/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_28_trial9/predictions.csv.gz",
+      "sha256": "1526dbb73d32bc2f696f70ff4f4e78e4fd561c0cc66d41dd8b6e1fa05cd5c1f6",
+      "bytes": 7528262,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_8_trial5/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_8_trial5/predictions.csv.gz",
+      "sha256": "f7971d64155a865af73907f844c381a65787e2e56abe138b65b1fc9c377b99ea",
+      "bytes": 7527577,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_8_trial9/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/sources/LightGBM_8_trial9/predictions.csv.gz",
+      "sha256": "a81e10425f7ea8ec4b106809c92ff815b28db628e95d5db6e81f1d852d7724cb",
+      "bytes": 7524530,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/weight_search.csv",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_three_v1/weight_search.csv",
+      "sha256": "f09f1f8ff90fe80ffcc8fdece7f3b14df983f4565bf2ec66ea443c03da728935",
+      "bytes": 53392,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/last_run_plan.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/last_run_plan.json",
+      "sha256": "dfb8bf66445f88deaa6202494c5bbf22b2e04f0979ffe86000f38b45a2a3728a",
+      "bytes": 1106,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/last_run_status.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/last_run_status.json",
+      "sha256": "aee1a7d666afe2f4ac182f4a8caf9408f9faabdb774a7240a3ad3f5f3761785b",
+      "bytes": 174,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/manifest.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/manifest.json",
+      "sha256": "6cb4356e277012a2f804ef79c23e440d6982886f1c251298e2bba2319a425f7b",
+      "bytes": 5873,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/lgbm_finalists_density_v1/source_finalists.json",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/source_finalists.json",
+      "sha256": "446dd0f9cc3c11310ebb7431ac88376595010f9d0f156ab4062342a16e6f525c",
+      "bytes": 1933,
+      "mapped_duplicate": false
+    },
+    {
+      "source": "results/m5_wrmsse/optuna_lgbm_67_cpu_52x8_v1/trial_005/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial5/predictions.csv.gz",
+      "sha256": "3aa497eef07acf5c2e4d9d127dd479ead598219ce03c92c427e1c3721d11b0e5",
+      "bytes": 8147545,
+      "mapped_duplicate": true
+    },
+    {
+      "source": "results/m5_wrmsse/optuna_lgbm_67_cpu_52x8_v1/trial_009/predictions.csv.gz",
+      "installed": "results/m5_wrmsse/lgbm_finalists_density_v1/ensemble_pairs_v1/sources/LightGBM_8_trial9/predictions.csv.gz",
+      "sha256": "3ded2c6a1829948fd1b97eff45e041b73a32c39852ead4d892d135a09d4ef9a8",
+      "bytes": 8139592,
+      "mapped_duplicate": true
+    }
+  ],
+  "source_file_count": 32,
+  "unique_installed_files": 30,
+  "note": "Two upstream Optuna gzip containers differ from the existing local files but have identical uncompressed CSV bytes. Their exact incoming containers are preserved in ensemble_pairs_v1/sources; local originals are unchanged."
+}

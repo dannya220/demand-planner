@@ -1,0 +1,71 @@
+{
+  "job": {
+    "name": "density28_2016-03-27_52x28_trial_009",
+    "phase": "density28",
+    "origin": "2016-03-27",
+    "density": 28,
+    "variant": "trial_009",
+    "params": {
+      "objective": "tweedie",
+      "metric": "None",
+      "boosting_type": "gbdt",
+      "device_type": "cpu",
+      "num_threads": 4,
+      "seed": 42,
+      "deterministic": true,
+      "force_col_wise": true,
+      "verbosity": -1,
+      "max_depth": -1,
+      "max_bin": 255,
+      "bin_construct_sample_cnt": 200000,
+      "feature_pre_filter": false,
+      "bagging_freq": 1,
+      "min_sum_hessian_in_leaf": 0.001,
+      "min_gain_to_split": 0.0,
+      "learning_rate": 0.09975125819860657,
+      "num_leaves": 63,
+      "min_data_in_leaf": 250,
+      "lambda_l1": 0.8827248013286972,
+      "lambda_l2": 1.740351379791848,
+      "feature_fraction": 0.8563973660909573,
+      "bagging_fraction": 0.7579657376635576,
+      "tweedie_variance_power": 1.1026305531889093
+    },
+    "tree_selection": "early_stopping_on_tuning_window",
+    "num_boost_round": 1600,
+    "early_stopping_rounds": 200,
+    "frozen_from": null
+  },
+  "job_sha256": "0139b7342d23eed9dc6346fc555a1a61da13f0e97ad78711d44d8bf297bd0d16",
+  "workspace_sha256": "9f6dc23452d69d62e3a7ad2aa64e8085f655dd915696259ea20d064cab49c69e",
+  "best_iteration": 197,
+  "fit_seconds": 2254.484392134,
+  "evaluated_iterations": 397,
+  "cap_reached": false,
+  "metrics": {
+    "WRMSSE": 0.5019588456962026,
+    "Bias": -0.002901704680924322
+  },
+  "data_preparation": {
+    "origin": "2016-03-27",
+    "density": 28,
+    "train_rows": 44393440,
+    "valid_rows": 853720,
+    "table_gib": 9.757567559368908,
+    "seconds": 192.03603397899997,
+    "fast_wrmsse_check": {
+      "ordinary": 1.0974838281714974,
+      "fast": 1.0974838281714971
+    }
+  },
+  "artifact_sha256": {
+    "models/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009.txt": "714652340d5799ef6632f78e7000bb3a39e05f584f0f505a6985fdd095f8da82",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/predictions.csv.gz": "0e88507998868cc531ea32ab0637605947760150b2562fb5ce5d6f3add0cac77",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/learning_curve.csv": "8e1152e9969c5882046d52c79b8406cda2ef70ebd46ccb40566f9c6f892d2823",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics_by_level.csv": "b9b351d6930f9c25e56397a797bbc474ec7ccc5faae0133c0a4fb4635af8b92b",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/feature_importance_gain.csv": "077ca610bc65568b43351557f95375e4739ede8a04293be079b0d1ed942ad73f",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/training_plan.csv": "41d5ba1e770f71f2039d0955784b8b9c28a44462dae8944bfb67b1ea4704249f",
+    "results/m5_wrmsse/lgbm_finalists_density_v1/density28_2016-03-27_52x28_trial_009/metrics.csv": "5380f00cd3aab7389b28008205a99312fee2b3c7cd826e32a191808d3892869d"
+  },
+  "completed_at_utc": "2026-10-25T15:54:57.311469+00:00"
+}

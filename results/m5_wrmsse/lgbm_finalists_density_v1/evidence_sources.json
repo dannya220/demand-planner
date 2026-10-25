@@ -1,0 +1,21 @@
+{
+  "screenshots": [
+    {
+      "file": "evidence/density16.png",
+      "original_filename": "Снимок экрана 2026-10-25 в 4.03.02 PM.png",
+      "sha256": "e015cabef00bfbecc5ce0a0b778e537d1b5ec41c08803c11249cb7985f33cb4b",
+      "source_type": "user_supplied_screenshot",
+      "WRMSSE_decimal_places": 6,
+      "Bias_percent_decimal_places": 2
+    },
+    {
+      "file": "evidence/historical_checks.png",
+      "original_filename": "Снимок экрана 2026-10-25 в 5.31.42 PM.png",
+      "sha256": "0057b6a948251127789efe9c048466a0f542c861793fb8832d5b62fef5e9c4ac",
+      "source_type": "user_supplied_screenshot",
+      "WRMSSE_decimal_places": 6,
+      "Bias_percent_decimal_places": 2
+    }
+  ],
+  "precision_note": "Screenshot-derived tables retain displayed precision; full training protocols for density 16 and the two earlier windows are absent from the latest checkpoint."
+}

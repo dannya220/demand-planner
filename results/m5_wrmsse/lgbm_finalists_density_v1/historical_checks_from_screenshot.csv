@@ -1,0 +1,7 @@
+origin,variant,WRMSSE,Bias,trees,minutes_displayed,gain_vs_control_displayed,density,source
+2016-01-31,control,0.764329,-0.0732,386,10.7,0.0,8,evidence/historical_checks.png
+2016-01-31,trial_009,0.728815,-0.0594,321,8.3,0.0465,8,evidence/historical_checks.png
+2016-01-31,trial_005,0.752058,-0.0671,471,12.6,0.0161,8,evidence/historical_checks.png
+2016-02-28,control,0.672673,-0.038,386,10.7,0.0,8,evidence/historical_checks.png
+2016-02-28,trial_009,0.670937,-0.0372,321,8.1,0.0026,8,evidence/historical_checks.png
+2016-02-28,trial_005,0.665074,-0.0363,471,12.4,0.0113,8,evidence/historical_checks.png
