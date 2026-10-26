@@ -1,0 +1,57 @@
+{
+  "job": {
+    "workspace_sha256": "81297a74a3098532c8aece7af596d4892ef4966555b1bdf3d608006b6b356313",
+    "period": "private",
+    "origin": "2016-05-22",
+    "model": {
+      "name": "week_02",
+      "density": 28,
+      "week": 2,
+      "trees": 196,
+      "params": {
+        "objective": "tweedie",
+        "metric": "None",
+        "boosting_type": "gbdt",
+        "device_type": "cpu",
+        "num_threads": 4,
+        "seed": 42,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1,
+        "max_depth": -1,
+        "max_bin": 255,
+        "bin_construct_sample_cnt": 200000,
+        "feature_pre_filter": false,
+        "bagging_freq": 1,
+        "min_sum_hessian_in_leaf": 0.001,
+        "min_gain_to_split": 0.0,
+        "learning_rate": 0.09975125819860657,
+        "num_leaves": 63,
+        "min_data_in_leaf": 250,
+        "lambda_l1": 0.8827248013286972,
+        "lambda_l2": 1.740351379791848,
+        "feature_fraction": 0.8563973660909573,
+        "bagging_fraction": 0.7579657376635576,
+        "tweedie_variance_power": 1.1026305531889093
+      }
+    },
+    "training_plan_sha256": "b60f6880223fb4e1ffeeeb473d6d242120618236548ca70ee3e84ae9e221db45",
+    "prediction_horizons": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "trees": 196,
+  "model_sha256": "7527a9e6c1578bafd0e8391e1fa1b96d055485907d664a9fc695b81f7f48b888",
+  "fit_seconds": 311.64639265500045,
+  "train_rows": 11098360,
+  "raw_table_gib": 2.4395710872486234,
+  "max_label_date": "2016-05-08",
+  "early_stopping": false,
+  "fitted_at_utc": "2026-10-26T16:02:29.767816+00:00"
+}

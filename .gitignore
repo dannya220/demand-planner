@@ -28,6 +28,8 @@ data/processed/*
 !data/processed/.gitkeep
 models/*
 !models/.gitkeep
+!models/README.md
+!models/manifest.json
 
 # OS files and logs
 .DS_Store
@@ -35,3 +37,6 @@ models/*
 
 # Full M5 forecast exports stay local; keep metrics and configs in Git
 results/m5_wrmsse/**/*.csv.gz
+results/m5_wrmsse/**/predictions.csv
+results/m5_wrmsse/**/submission.csv
+artifacts/

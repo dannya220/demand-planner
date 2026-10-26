@@ -1,0 +1,2 @@
+week,horizon_start,horizon_end,WRMSSE_7d,Bias,trees,minutes,cap_reached
+1,1,7,0.4763476340250873,0.00423167926534207,2076,61.13564135914999,False

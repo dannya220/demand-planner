@@ -1,0 +1,29 @@
+{
+  "release_tag": "v1.0.0",
+  "assets": [
+    {
+      "name": "demand-planner_final_checkpoint.zip",
+      "bytes": 96733337,
+      "sha256": "da11bd93089c8aca17f2f7efa52f55103c578c92f28b748fa91c46506fad9fad",
+      "download_url": "https://github.com/dannya220/demand-planner/releases/download/v1.0.0/demand-planner_final_checkpoint.zip"
+    },
+    {
+      "name": "demand-planner_models_v1.zip",
+      "bytes": 33711099,
+      "sha256": "8d3a40c052cfeded00f24a20be235b60bd5f5fa08d0c2926cdc3f6639df1ca18",
+      "download_url": "https://github.com/dannya220/demand-planner/releases/download/v1.0.0/demand-planner_models_v1.zip"
+    },
+    {
+      "name": "demand-planner_research_forecasts_v1.zip",
+      "bytes": 38495565,
+      "sha256": "08890719bbe6dea1df8c1a19136e99711f82c262ae173fa1693428a4cf6a1d3d",
+      "download_url": "https://github.com/dannya220/demand-planner/releases/download/v1.0.0/demand-planner_research_forecasts_v1.zip"
+    },
+    {
+      "name": "submission.csv.gz",
+      "bytes": 15949397,
+      "sha256": "209ae49e516a258ac776ef9197b809dc34e8c7b9ea309c285c0bfcc00588c258",
+      "download_url": "https://github.com/dannya220/demand-planner/releases/download/v1.0.0/submission.csv.gz"
+    }
+  ]
+}

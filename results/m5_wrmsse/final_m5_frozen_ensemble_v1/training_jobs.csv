@@ -1,0 +1,13 @@
+period,model,trees,train_rows,label_end,predict_days
+public,global_trial9_28,197,44393440,2016-04-24,14
+public,global_trial5_8,471,12683840,2016-04-24,14
+public,week_01,2076,11098360,2016-04-03,7
+public,week_02,196,11098360,2016-04-10,7
+public,week_03,216,11098360,2016-04-17,7
+public,week_04,93,11098360,2016-04-24,7
+private,global_trial9_28,197,44393440,2016-05-22,14
+private,global_trial5_8,471,12683840,2016-05-22,14
+private,week_01,2076,11098360,2016-05-01,7
+private,week_02,196,11098360,2016-05-08,7
+private,week_03,216,11098360,2016-05-15,7
+private,week_04,93,11098360,2016-05-22,7

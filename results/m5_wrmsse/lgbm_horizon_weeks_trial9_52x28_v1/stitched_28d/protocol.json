@@ -1,0 +1,36 @@
+{
+  "workspace_sha256": "f90eeec20e16f35b69f79db28fe1ae0539edf409d1241def3deb725fe57f7dfb",
+  "origin": "2016-03-27",
+  "metrics": {
+    "WRMSSE": 0.49538154586030086,
+    "Bias": -0.004245353371408966
+  },
+  "components": [
+    {
+      "week": 1,
+      "name": "week_01",
+      "horizon_start": 1,
+      "horizon_end": 7
+    },
+    {
+      "week": 2,
+      "name": "week_02",
+      "horizon_start": 8,
+      "horizon_end": 14
+    },
+    {
+      "week": 3,
+      "name": "week_03",
+      "horizon_start": 15,
+      "horizon_end": 21
+    },
+    {
+      "week": 4,
+      "name": "week_04",
+      "horizon_start": 22,
+      "horizon_end": 28
+    }
+  ],
+  "assembly": "one_specialist_per_forecast_week",
+  "historical_development_score": true
+}

@@ -1,0 +1,51 @@
+{
+  "workspace_sha256": "81297a74a3098532c8aece7af596d4892ef4966555b1bdf3d608006b6b356313",
+  "rows": 60980,
+  "columns": [
+    "id",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28"
+  ],
+  "submission_sha256": "c5390842ef852d5400557249e1e24e24830fa280df3d75ba963d27a68996b66a",
+  "calibration_coefficient": 1.006,
+  "periods": {
+    "public": {
+      "origin": "2016-04-24",
+      "forecast_start": "2016-04-25",
+      "forecast_end": "2016-05-22"
+    },
+    "private": {
+      "origin": "2016-05-22",
+      "forecast_start": "2016-05-23",
+      "forecast_end": "2016-06-19"
+    }
+  },
+  "weights_reselected_on_public": false,
+  "created_at_utc": "2026-10-26T16:13:47.993171+00:00"
+}

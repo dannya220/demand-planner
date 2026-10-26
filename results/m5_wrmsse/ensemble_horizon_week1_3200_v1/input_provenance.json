@@ -1,0 +1,74 @@
+[
+  {
+    "name": "global_trial9_28",
+    "previous_source": {
+      "name": "global_trial9_28",
+      "source": "/kaggle/input/datasets/daniilshestov/52-28-model/demand-planner_optuna_52x28_checkpoint/results/m5_wrmsse/optuna_lgbm_67_cpu_52x28_v1/trial_000/predictions.csv",
+      "source_payload_sha256": "38653e34696694cad8014a67c87ba8bbad9f288d6003fa507b9a610fbab42ba8",
+      "saved_payload_sha256": "38653e34696694cad8014a67c87ba8bbad9f288d6003fa507b9a610fbab42ba8",
+      "metrics": {
+        "WRMSSE": 0.5019588456962026,
+        "Bias": -0.002901704680924322
+      }
+    },
+    "saved_payload_sha256": "38653e34696694cad8014a67c87ba8bbad9f288d6003fa507b9a610fbab42ba8",
+    "metrics": {
+      "WRMSSE": 0.5019588456962026,
+      "Bias": -0.002901704680924322
+    }
+  },
+  {
+    "name": "global_trial5_28",
+    "previous_source": {
+      "name": "global_trial5_28",
+      "source": "/kaggle/input/datasets/daniilshestov/52-28-model/demand-planner_optuna_52x28_checkpoint/results/m5_wrmsse/optuna_lgbm_67_cpu_52x28_v1/trial_001/predictions.csv",
+      "source_payload_sha256": "ee98262e86dbddefa13972ba1324b2a476693f150f2e221f388fab55a214d0e5",
+      "saved_payload_sha256": "ee98262e86dbddefa13972ba1324b2a476693f150f2e221f388fab55a214d0e5",
+      "metrics": {
+        "WRMSSE": 0.5031034694526212,
+        "Bias": -0.008343861229629601
+      }
+    },
+    "saved_payload_sha256": "ee98262e86dbddefa13972ba1324b2a476693f150f2e221f388fab55a214d0e5",
+    "metrics": {
+      "WRMSSE": 0.5031034694526212,
+      "Bias": -0.008343861229629601
+    }
+  },
+  {
+    "name": "global_trial5_8",
+    "previous_source": {
+      "name": "global_trial5_8",
+      "source": "/kaggle/input/datasets/daniilshestov/ensemble-three/demand-planner_ensemble_three_checkpoint/results/m5_wrmsse/optuna_lgbm_67_cpu_52x8_v1/trial_005/predictions.csv",
+      "source_payload_sha256": "b29fe6338bb4f78d1ad8de49291a9cf05c369c16de404afdda3690a4d2589bf4",
+      "saved_payload_sha256": "b29fe6338bb4f78d1ad8de49291a9cf05c369c16de404afdda3690a4d2589bf4",
+      "metrics": {
+        "WRMSSE": 0.5066471330479768,
+        "Bias": -0.010438965087630092
+      }
+    },
+    "saved_payload_sha256": "b29fe6338bb4f78d1ad8de49291a9cf05c369c16de404afdda3690a4d2589bf4",
+    "metrics": {
+      "WRMSSE": 0.5066471330479768,
+      "Bias": -0.010438965087630092
+    }
+  },
+  {
+    "name": "weekly_specialists",
+    "previous_source": {
+      "name": "weekly_specialists",
+      "source": "/kaggle/input/datasets/daniilshestov/weeks-checkpoint/demand-planner_horizon_weeks_checkpoint/results/m5_wrmsse/lgbm_horizon_weeks_trial9_52x28_v1/stitched_28d/predictions.csv",
+      "source_payload_sha256": "a70e74ebe054f7100fa66b0be70eed4aca6b788a2177d2ea62acd19b6c1e1c8f",
+      "saved_payload_sha256": "a70e74ebe054f7100fa66b0be70eed4aca6b788a2177d2ea62acd19b6c1e1c8f",
+      "metrics": {
+        "WRMSSE": 0.49538154586030086,
+        "Bias": -0.004245353371408966
+      }
+    },
+    "saved_payload_sha256": "ad993c5a43f014e91a00952fb0999f1215ee9f9598503d4ca0c0846e71c24dfc",
+    "metrics": {
+      "WRMSSE": 0.4942565674509285,
+      "Bias": -0.004717024261929548
+    }
+  }
+]

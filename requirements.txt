@@ -10,5 +10,4 @@ jupyterlab
 ipykernel
 nbformat
 nbclient
-streamlit
 pyarrow
