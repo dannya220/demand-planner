@@ -1,0 +1,13 @@
+period,model,trees,fit_seconds,forecast_saved
+public,global_trial9_28,197,1300.563665219,True
+public,global_trial5_8,471,925.8702332510002,True
+public,week_01,2076,3354.4217005470005,True
+public,week_02,196,320.992028097,True
+public,week_03,216,342.5375904069997,True
+public,week_04,93,173.95033822800087,True
+private,global_trial9_28,197,1275.263965741001,True
+private,global_trial5_8,471,881.7761607720004,True
+private,week_01,2076,3311.803801445001,True
+private,week_02,196,311.64639265500045,True
+private,week_03,216,343.40708950299995,True
+private,week_04,93,170.0328429780002,True

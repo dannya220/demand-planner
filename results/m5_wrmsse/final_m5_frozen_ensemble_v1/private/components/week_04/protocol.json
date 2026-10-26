@@ -1,0 +1,61 @@
+{
+  "job": {
+    "workspace_sha256": "81297a74a3098532c8aece7af596d4892ef4966555b1bdf3d608006b6b356313",
+    "period": "private",
+    "origin": "2016-05-22",
+    "model": {
+      "name": "week_04",
+      "density": 28,
+      "week": 4,
+      "trees": 93,
+      "params": {
+        "objective": "tweedie",
+        "metric": "None",
+        "boosting_type": "gbdt",
+        "device_type": "cpu",
+        "num_threads": 4,
+        "seed": 42,
+        "deterministic": true,
+        "force_col_wise": true,
+        "verbosity": -1,
+        "max_depth": -1,
+        "max_bin": 255,
+        "bin_construct_sample_cnt": 200000,
+        "feature_pre_filter": false,
+        "bagging_freq": 1,
+        "min_sum_hessian_in_leaf": 0.001,
+        "min_gain_to_split": 0.0,
+        "learning_rate": 0.09975125819860657,
+        "num_leaves": 63,
+        "min_data_in_leaf": 250,
+        "lambda_l1": 0.8827248013286972,
+        "lambda_l2": 1.740351379791848,
+        "feature_fraction": 0.8563973660909573,
+        "bagging_fraction": 0.7579657376635576,
+        "tweedie_variance_power": 1.1026305531889093
+      }
+    },
+    "training_plan_sha256": "98b36c20bbee3c92990e11feb05e8f0650fe9d5b8ee3d74a55b481930e39e4fd",
+    "prediction_horizons": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  },
+  "model_sha256": "fcda834858a703ab5c0031a5c9da965fbccee0ea605efc69a5be1386c8488c81",
+  "prediction_payload_sha256": "e0243ae3f5f3ce58c37bc752785cb5c517888aa59be3413c122bf5ec1461da1b",
+  "forecast_dates": [
+    "2016-06-13",
+    "2016-06-14",
+    "2016-06-15",
+    "2016-06-16",
+    "2016-06-17",
+    "2016-06-18",
+    "2016-06-19"
+  ],
+  "created_at_utc": "2026-10-26T16:13:16.481811+00:00"
+}

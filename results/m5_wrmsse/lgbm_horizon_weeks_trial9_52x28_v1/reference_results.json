@@ -1,0 +1,13 @@
+{
+  "single_trial9_52x28": {
+    "WRMSSE": 0.5019588456962026,
+    "Bias": -0.002901704680924322,
+    "trees": 197,
+    "source": "notebook 06, density28_2016-03-27_52x28_trial_009/protocol.json"
+  },
+  "ensemble_70_30": {
+    "WRMSSE": 0.500879332781371,
+    "Bias": -0.005162882802935975,
+    "source": "notebook 06, ensemble_pairs_v1; 70% trial9_28 + 30% trial5_8"
+  }
+}

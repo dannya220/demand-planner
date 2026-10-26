@@ -1,0 +1,16 @@
+{
+  "completed_weeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "requested_weeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "all_four_ready": true,
+  "updated_at_utc": "2026-10-26T09:44:31.025896+00:00"
+}

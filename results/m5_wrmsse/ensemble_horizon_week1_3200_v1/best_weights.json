@@ -1,0 +1,19 @@
+{
+  "kind": "weekly_specialist_weights",
+  "global_weights": {
+    "global_trial9_28": 0.25,
+    "global_trial5_28": 0.0,
+    "global_trial5_8": 0.7499999999999999
+  },
+  "specialist_weights_by_week": [
+    0.4,
+    1.0,
+    0.5,
+    1.0
+  ],
+  "metrics": {
+    "WRMSSE": 0.49138469263136814,
+    "Bias": -0.0038688512442381917
+  },
+  "historical_development_score": true
+}

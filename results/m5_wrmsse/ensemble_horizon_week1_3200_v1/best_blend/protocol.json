@@ -1,0 +1,30 @@
+{
+  "origin": "2016-03-27",
+  "horizon": 28,
+  "metrics": {
+    "WRMSSE": 0.4895447561693653,
+    "Bias": 0.0021079356482966993
+  },
+  "weights": {
+    "kind": "weekly_specialist_weights",
+    "global_weights": {
+      "global_trial9_28": 0.25,
+      "global_trial5_28": 0.0,
+      "global_trial5_8": 0.7499999999999999
+    },
+    "specialist_weights_by_week": [
+      0.4,
+      1.0,
+      0.5,
+      1.0
+    ]
+  },
+  "calibration_coefficient": 1.006,
+  "source_components": [
+    "global_trial9_28",
+    "global_trial5_28",
+    "global_trial5_8",
+    "weekly_specialists"
+  ],
+  "historical_development_score": true
+}
